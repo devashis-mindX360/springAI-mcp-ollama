@@ -1,0 +1,120 @@
+2026-02-26T12:41:07.683+05:30  INFO 15260 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 15260 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:41:07.687+05:30 DEBUG 15260 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:41:07.689+05:30  INFO 15260 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:41:12.842+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:41:12.845+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:41:12.846+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:41:12.847+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:41:12.848+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:41:12.849+05:30  INFO 15260 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:41:13.300+05:30  INFO 15260 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 6.624 seconds (process running for 8.425)
+2026-02-26T12:43:08.376+05:30  INFO 21824 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 21824 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:43:08.378+05:30 DEBUG 21824 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:43:08.379+05:30  INFO 21824 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:43:11.651+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:43:11.652+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:43:11.653+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:43:11.653+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:43:11.654+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:43:11.655+05:30  INFO 21824 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:43:11.993+05:30  INFO 21824 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 3.926 seconds (process running for 5.036)
+2026-02-26T12:44:53.016+05:30  INFO 13788 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 13788 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:44:53.018+05:30 DEBUG 13788 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:44:53.019+05:30  INFO 13788 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:44:56.239+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:44:56.242+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:44:56.242+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:44:56.243+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:44:56.243+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:44:56.244+05:30  INFO 13788 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:44:56.588+05:30  INFO 13788 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 3.879 seconds (process running for 5.0)
+2026-02-26T12:45:59.663+05:30  INFO 10156 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 10156 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:45:59.664+05:30 DEBUG 10156 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:45:59.666+05:30  INFO 10156 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:46:02.984+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:46:02.986+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:46:02.986+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:46:02.987+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:46:02.988+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:46:02.988+05:30  INFO 10156 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:46:03.311+05:30  INFO 10156 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 3.949 seconds (process running for 5.087)
+2026-02-26T12:46:50.894+05:30  INFO 27364 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 27364 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:46:50.896+05:30 DEBUG 27364 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:46:50.898+05:30  INFO 27364 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:46:54.083+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:46:54.085+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:46:54.086+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:46:54.086+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:46:54.086+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:46:54.087+05:30  INFO 27364 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:46:54.406+05:30  INFO 27364 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 3.845 seconds (process running for 4.953)
+2026-02-26T12:52:31.312+05:30  INFO 14620 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 14620 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:52:31.314+05:30 DEBUG 14620 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:52:31.314+05:30  INFO 14620 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:52:34.495+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:52:34.496+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:52:34.496+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:52:34.497+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:52:34.497+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:52:34.497+05:30  INFO 14620 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:52:34.793+05:30  INFO 14620 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 3.78 seconds (process running for 4.865)
+2026-02-26T12:55:39.233+05:30  INFO 27452 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 27452 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:55:39.234+05:30 DEBUG 27452 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:55:39.235+05:30  INFO 27452 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:55:42.715+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:55:42.717+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:55:42.717+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:55:42.718+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:55:42.719+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:55:42.720+05:30  INFO 27452 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:55:43.051+05:30  INFO 27452 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 4.216 seconds (process running for 5.506)
+2026-02-26T12:58:30.235+05:30  INFO 9100 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 9100 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T12:58:30.237+05:30 DEBUG 9100 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T12:58:30.239+05:30  INFO 9100 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T12:58:34.870+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T12:58:34.871+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T12:58:34.872+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T12:58:34.873+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T12:58:34.873+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T12:58:34.874+05:30  INFO 9100 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T12:58:35.318+05:30  INFO 9100 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 5.519 seconds (process running for 7.207)
+2026-02-26T13:00:02.569+05:30  INFO 25952 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 25952 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T13:00:02.571+05:30 DEBUG 25952 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T13:00:02.571+05:30  INFO 25952 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T13:00:06.144+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T13:00:06.145+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T13:00:06.145+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T13:00:06.146+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T13:00:06.147+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T13:00:06.148+05:30  INFO 25952 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T13:00:06.523+05:30  INFO 25952 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 4.299 seconds (process running for 5.592)
+2026-02-26T13:00:45.201+05:30  INFO 11268 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 11268 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T13:00:45.204+05:30 DEBUG 11268 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T13:00:45.204+05:30  INFO 11268 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T13:00:50.275+05:30  INFO 11268 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T13:00:50.676+05:30  INFO 11268 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 5.935 seconds (process running for 7.678)
+2026-02-26T13:03:42.865+05:30  INFO 29124 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 29124 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T13:03:42.865+05:30 DEBUG 29124 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T13:03:42.865+05:30  INFO 29124 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T13:03:46.378+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T13:03:46.387+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T13:03:46.387+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T13:03:46.389+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T13:03:46.390+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T13:03:46.392+05:30  INFO 29124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T13:03:46.797+05:30  INFO 29124 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 4.246 seconds (process running for 5.335)
+2026-02-26T15:29:56.569+05:30  INFO 23764 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Starting SpringAiMcpApplicationTests using Java 21.0.10 with PID 23764 (started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp)
+2026-02-26T15:29:56.570+05:30 DEBUG 23764 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-26T15:29:56.571+05:30  INFO 23764 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T15:30:01.379+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-26T15:30:01.382+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 9
+2026-02-26T15:30:01.382+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-26T15:30:01.383+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-26T15:30:01.384+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-26T15:30:01.385+05:30  INFO 23764 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-26T15:30:01.788+05:30  INFO 23764 --- [employee-mcp-server] [main] c.m.mcp.SpringAiMcpApplicationTests      : Started SpringAiMcpApplicationTests in 5.696 seconds (process running for 7.438)

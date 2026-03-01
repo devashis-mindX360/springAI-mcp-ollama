@@ -1,0 +1,482 @@
+2026-02-27T11:15:08.411+05:30  INFO 26140 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 26140 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:15:08.415+05:30 DEBUG 26140 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:15:08.418+05:30  INFO 26140 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:15:09.075+05:30 ERROR 26140 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'employeeTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T11:17:04.664+05:30  INFO 15652 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 15652 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:17:04.667+05:30 DEBUG 15652 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:17:04.668+05:30  INFO 15652 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:17:05.668+05:30 ERROR 15652 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'clientTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/ClientTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T11:18:35.560+05:30  INFO 13528 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 13528 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:18:35.563+05:30 DEBUG 13528 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:18:35.565+05:30  INFO 13528 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:18:41.609+05:30  INFO 13528 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-27T11:18:41.612+05:30  INFO 13528 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-27T11:18:41.613+05:30  INFO 13528 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-27T11:18:41.614+05:30  INFO 13528 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-27T11:18:41.616+05:30  INFO 13528 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-27T11:18:42.078+05:30  INFO 13528 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Started SpringAiMcpApplication in 7.805 seconds (process running for 11.039)
+2026-02-27T11:24:33.592+05:30  INFO 11972 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 11972 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:24:33.596+05:30  INFO 11972 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:24:38.868+05:30  INFO 11972 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Started SpringAiMcpApplication in 5.783 seconds (process running for 6.524)
+2026-02-27T11:24:51.142+05:30  INFO 11840 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 11840 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:24:51.145+05:30  INFO 11840 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:24:55.903+05:30  INFO 11840 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Started SpringAiMcpApplication in 5.294 seconds (process running for 6.006)
+2026-02-27T11:54:47.323+05:30  INFO 26852 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 26852 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:54:47.328+05:30 DEBUG 26852 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:54:47.329+05:30  INFO 26852 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:54:47.806+05:30  WARN 26852 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'employeeTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]] for bean 'employeeTools' since there is already [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] bound.
+2026-02-27T11:54:47.823+05:30  INFO 26852 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T11:54:47.846+05:30 ERROR 26852 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'employeeTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T11:57:11.624+05:30  INFO 15556 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 15556 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:57:11.628+05:30 DEBUG 15556 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:57:11.629+05:30  INFO 15556 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:57:12.379+05:30  INFO 15556 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T11:57:12.621+05:30  INFO 15556 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 227 ms. Found 5 JPA repository interfaces.
+2026-02-27T11:57:13.025+05:30  WARN 15556 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:57:13.028+05:30  WARN 15556 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:57:13.043+05:30  WARN 15556 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:57:13.358+05:30  INFO 15556 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T11:57:13.474+05:30  INFO 15556 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T11:57:13.536+05:30  INFO 15556 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T11:57:13.986+05:30  INFO 15556 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T11:57:14.021+05:30  INFO 15556 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T11:57:14.656+05:30  INFO 15556 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@675ec28b
+2026-02-27T11:57:14.658+05:30  INFO 15556 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T11:57:14.750+05:30  WARN 15556 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T11:57:14.787+05:30  INFO 15556 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T11:57:16.404+05:30  INFO 15556 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T11:57:16.546+05:30  INFO 15556 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T11:57:17.250+05:30  WARN 15556 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'employeeTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Unsatisfied dependency expressed through method 'employeeTools' parameter 0: No qualifying bean of type 'com.mindx360.mcp.tool.EmployeeTools' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-27T11:57:17.252+05:30  INFO 15556 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T11:57:17.259+05:30  INFO 15556 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T11:57:17.281+05:30  INFO 15556 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T11:57:17.293+05:30  INFO 15556 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T11:57:17.343+05:30 ERROR 15556 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method employeeTools in com.mindx360.mcp.config.McpConfig required a bean of type 'com.mindx360.mcp.tool.EmployeeTools' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mindx360.mcp.tool.EmployeeTools' in your configuration.
+
+2026-02-27T11:59:52.031+05:30  INFO 28444 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 28444 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T11:59:52.037+05:30 DEBUG 28444 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T11:59:52.038+05:30  INFO 28444 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T11:59:52.868+05:30  INFO 28444 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T11:59:53.081+05:30  INFO 28444 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 199 ms. Found 5 JPA repository interfaces.
+2026-02-27T11:59:53.492+05:30  WARN 28444 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:59:53.494+05:30  WARN 28444 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:59:53.510+05:30  WARN 28444 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T11:59:53.803+05:30  INFO 28444 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T11:59:53.895+05:30  INFO 28444 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T11:59:53.951+05:30  INFO 28444 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T11:59:54.374+05:30  INFO 28444 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T11:59:54.410+05:30  INFO 28444 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T11:59:54.897+05:30  INFO 28444 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c6e3ff9
+2026-02-27T11:59:54.901+05:30  INFO 28444 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T11:59:54.974+05:30  WARN 28444 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T11:59:54.994+05:30  INFO 28444 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T11:59:56.460+05:30  INFO 28444 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T11:59:56.551+05:30  INFO 28444 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T11:59:57.112+05:30  WARN 28444 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientTools': Resolution of declared constructors on bean Class [com.mindx360.mcp.tool.ClientTools] from ClassLoader [org.springframework.boot.loader.launch.LaunchedClassLoader@6193b845] failed
+2026-02-27T11:59:57.113+05:30  INFO 28444 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T11:59:57.116+05:30  INFO 28444 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T11:59:57.128+05:30  INFO 28444 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T11:59:57.137+05:30  INFO 28444 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T11:59:57.166+05:30 ERROR 28444 --- [employee-mcp-server] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'clientTools': Resolution of declared constructors on bean Class [com.mindx360.mcp.tool.ClientTools] from ClassLoader [org.springframework.boot.loader.launch.LaunchedClassLoader@6193b845] failed
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:384) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1229) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar!/:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar!/:6.2.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at com.mindx360.mcp.SpringAiMcpApplication.main(SpringAiMcpApplication.java:23) ~[!/:1.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[springAI-mcp-1.0.0.jar:1.0.0]
+Caused by: java.lang.NoClassDefFoundError: ClientService
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3551) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2729) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:379) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	... 24 common frames omitted
+Caused by: java.lang.ClassNotFoundException: ClientService
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[na:na]
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 28 common frames omitted
+
+2026-02-27T12:07:47.410+05:30  INFO 31080 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 31080 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:07:47.414+05:30 DEBUG 31080 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:07:47.416+05:30  INFO 31080 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:07:47.868+05:30  WARN 31080 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'employeeTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]] for bean 'employeeTools' since there is already [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] bound.
+2026-02-27T12:07:47.884+05:30  INFO 31080 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:07:47.903+05:30 ERROR 31080 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'employeeTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T12:08:54.693+05:30  INFO 30548 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 30548 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:08:54.695+05:30 DEBUG 30548 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:08:54.696+05:30  INFO 30548 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:08:55.128+05:30  WARN 30548 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'employeeTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]] for bean 'employeeTools' since there is already [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] bound.
+2026-02-27T12:08:55.144+05:30  INFO 30548 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:08:55.164+05:30 ERROR 30548 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'employeeTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T12:09:15.727+05:30  INFO 31552 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 31552 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:09:15.731+05:30 DEBUG 31552 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:09:15.732+05:30  INFO 31552 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:09:16.393+05:30  INFO 31552 --- [employee-mcp-server] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'employeeTools' with a different definition: replacing [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]]
+2026-02-27T12:09:16.395+05:30  INFO 31552 --- [employee-mcp-server] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'clientTools' with a different definition: replacing [Generic bean: class=com.mindx360.mcp.tool.ClientTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/ClientTools.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=clientTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]]
+2026-02-27T12:09:16.567+05:30  INFO 31552 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:09:16.790+05:30  INFO 31552 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 5 JPA repository interfaces.
+2026-02-27T12:09:17.158+05:30  WARN 31552 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:09:17.162+05:30  WARN 31552 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:09:17.176+05:30  WARN 31552 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:09:17.450+05:30  INFO 31552 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:09:17.535+05:30  INFO 31552 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T12:09:17.590+05:30  INFO 31552 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T12:09:18.047+05:30  INFO 31552 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:09:18.092+05:30  INFO 31552 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:09:18.615+05:30  INFO 31552 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7871d261
+2026-02-27T12:09:18.617+05:30  INFO 31552 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:09:18.702+05:30  WARN 31552 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:09:18.725+05:30  INFO 31552 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:09:20.426+05:30  INFO 31552 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:09:20.521+05:30  INFO 31552 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:09:21.103+05:30  WARN 31552 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Unsatisfied dependency expressed through method 'clientTools' parameter 0: No qualifying bean of type 'com.mindx360.mcp.tool.ClientTools' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-27T12:09:21.104+05:30  INFO 31552 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:09:21.106+05:30  INFO 31552 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:09:21.119+05:30  INFO 31552 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T12:09:21.129+05:30  INFO 31552 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:09:21.165+05:30 ERROR 31552 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method clientTools in com.mindx360.mcp.config.McpConfig required a bean of type 'com.mindx360.mcp.tool.ClientTools' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mindx360.mcp.tool.ClientTools' in your configuration.
+
+2026-02-27T12:10:36.257+05:30  INFO 31568 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 31568 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:10:36.259+05:30 DEBUG 31568 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:10:36.260+05:30  INFO 31568 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:10:36.926+05:30  INFO 31568 --- [employee-mcp-server] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'employeeTools' with a different definition: replacing [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]]
+2026-02-27T12:10:36.928+05:30  INFO 31568 --- [employee-mcp-server] [main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'clientTools' with a different definition: replacing [Generic bean: class=com.mindx360.mcp.tool.ClientTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/ClientTools.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=clientTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]]
+2026-02-27T12:10:37.116+05:30  INFO 31568 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:10:37.370+05:30  INFO 31568 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 239 ms. Found 5 JPA repository interfaces.
+2026-02-27T12:10:37.748+05:30  WARN 31568 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:10:37.750+05:30  WARN 31568 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:10:37.765+05:30  WARN 31568 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:10:38.026+05:30  INFO 31568 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:10:38.128+05:30  INFO 31568 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T12:10:38.178+05:30  INFO 31568 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T12:10:38.598+05:30  INFO 31568 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:10:38.634+05:30  INFO 31568 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:10:39.283+05:30  INFO 31568 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7871d261
+2026-02-27T12:10:39.289+05:30  INFO 31568 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:10:39.425+05:30  WARN 31568 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:10:39.466+05:30  INFO 31568 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:10:40.936+05:30  INFO 31568 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:10:41.035+05:30  INFO 31568 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:10:41.593+05:30  WARN 31568 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'clientTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Unsatisfied dependency expressed through method 'clientTools' parameter 0: No qualifying bean of type 'com.mindx360.mcp.tool.ClientTools' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-27T12:10:41.594+05:30  INFO 31568 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:10:41.598+05:30  INFO 31568 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:10:41.615+05:30  INFO 31568 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T12:10:41.624+05:30  INFO 31568 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:10:41.670+05:30 ERROR 31568 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of method clientTools in com.mindx360.mcp.config.McpConfig required a bean of type 'com.mindx360.mcp.tool.ClientTools' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.mindx360.mcp.tool.ClientTools' in your configuration.
+
+2026-02-27T12:12:00.092+05:30  INFO 23412 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 23412 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:12:00.093+05:30 DEBUG 23412 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:12:00.094+05:30  INFO 23412 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:12:00.542+05:30  WARN 23412 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'employeeTools' defined in class path resource [com/mindx360/mcp/config/McpConfig.class]: Cannot register bean definition [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=mcpConfig; factoryMethodName=employeeTools; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [com/mindx360/mcp/config/McpConfig.class]] for bean 'employeeTools' since there is already [Generic bean: class=com.mindx360.mcp.tool.EmployeeTools; scope=singleton; abstract=false; lazyInit=null; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=null; factoryMethodName=null; initMethodNames=null; destroyMethodNames=null; defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class]] bound.
+2026-02-27T12:12:00.559+05:30  INFO 23412 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:12:00.579+05:30 ERROR 23412 --- [employee-mcp-server] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'employeeTools', defined in class path resource [com/mindx360/mcp/config/McpConfig.class], could not be registered. A bean with that name has already been defined in URL [jar:nested:/C:/Users/Devashis.Kumar/OneDrive%20-%20mindX360%20Technologies/Documents/MCP/springAI-mcp-MySQL/target/springAI-mcp-1.0.0.jar/!BOOT-INF/classes/!/com/mindx360/mcp/tool/EmployeeTools.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+
+2026-02-27T12:13:01.243+05:30  INFO 23344 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 23344 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:13:01.246+05:30 DEBUG 23344 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:13:01.247+05:30  INFO 23344 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:13:02.117+05:30  INFO 23344 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:13:02.350+05:30  INFO 23344 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 214 ms. Found 5 JPA repository interfaces.
+2026-02-27T12:13:02.719+05:30  WARN 23344 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:13:02.721+05:30  WARN 23344 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:13:02.740+05:30  WARN 23344 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:13:03.001+05:30  INFO 23344 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:13:03.111+05:30  INFO 23344 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T12:13:03.178+05:30  INFO 23344 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T12:13:03.654+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:13:03.695+05:30  INFO 23344 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:13:04.232+05:30  INFO 23344 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f03ee8f
+2026-02-27T12:13:04.234+05:30  INFO 23344 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:13:04.342+05:30  WARN 23344 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:13:04.383+05:30  INFO 23344 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:13:05.879+05:30  INFO 23344 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:13:05.971+05:30  INFO 23344 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:13:06.775+05:30  WARN 23344 --- [employee-mcp-server] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2026-02-27T12:13:06.823+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-27T12:13:06.824+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 7
+2026-02-27T12:13:06.824+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-27T12:13:06.824+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-27T12:13:06.825+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-27T12:13:06.826+05:30  INFO 23344 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-27T12:13:06.829+05:30  WARN 23344 --- [employee-mcp-server] [main] s.c.a.AnnotationConfigApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+2026-02-27T12:13:06.847+05:30  INFO 23344 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:13:06.850+05:30  INFO 23344 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:13:06.861+05:30  INFO 23344 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-02-27T12:13:06.870+05:30  INFO 23344 --- [employee-mcp-server] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-27T12:13:06.893+05:30 ERROR 23344 --- [employee-mcp-server] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'mcpSyncServer' defined in class path resource [org/springframework/ai/mcp/server/common/autoconfigure/McpServerAutoConfiguration.class]: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1228) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1194) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1130) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:990) ~[spring-context-6.2.12.jar!/:6.2.12]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.12.jar!/:6.2.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.5.7.jar!/:3.5.7]
+	at com.mindx360.mcp.SpringAiMcpApplication.main(SpringAiMcpApplication.java:23) ~[!/:1.0.0]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:106) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40) ~[springAI-mcp-1.0.0.jar:1.0.0]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [io.modelcontextprotocol.server.McpSyncServer]: Factory method 'mcpSyncServer' threw exception with message: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:200) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:89) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:169) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	... 25 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/web/context/support/StandardServletEnvironment
+	at org.springframework.ai.mcp.server.common.autoconfigure.McpServerAutoConfiguration.mcpSyncServer(McpServerAutoConfiguration.java:217) ~[spring-ai-autoconfigure-mcp-server-common-1.1.2.jar!/:1.1.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:172) ~[spring-beans-6.2.12.jar!/:6.2.12]
+	... 28 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.web.context.support.StandardServletEnvironment
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593) ~[na:na]
+	at org.springframework.boot.loader.net.protocol.jar.JarUrlClassLoader.loadClass(JarUrlClassLoader.java:107) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at org.springframework.boot.loader.launch.LaunchedClassLoader.loadClass(LaunchedClassLoader.java:91) ~[springAI-mcp-1.0.0.jar:1.0.0]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 32 common frames omitted
+
+2026-02-27T12:14:59.699+05:30  INFO 32124 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Starting SpringAiMcpApplication v1.0.0 using Java 21.0.10 with PID 32124 (C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL\target\springAI-mcp-1.0.0.jar started by Devashis.Kumar in C:\Users\Devashis.Kumar\OneDrive - mindX360 Technologies\Documents\MCP\springAI-mcp-MySQL)
+2026-02-27T12:14:59.703+05:30 DEBUG 32124 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Running with Spring Boot v3.5.7, Spring v6.2.12
+2026-02-27T12:14:59.704+05:30  INFO 32124 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-02-27T12:15:00.656+05:30  INFO 32124 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-27T12:15:00.884+05:30  INFO 32124 --- [employee-mcp-server] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 212 ms. Found 5 JPA repository interfaces.
+2026-02-27T12:15:01.286+05:30  WARN 32124 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:15:01.288+05:30  WARN 32124 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'serverAnnotatedBeanRegistry' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerAutoConfiguration$ServerMcpAnnotatedBeans] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:15:01.301+05:30  WARN 32124 --- [employee-mcp-server] [main] trationDelegate$BeanPostProcessorChecker : Bean 'spring.ai.mcp.server.annotation-scanner-org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties' of type [org.springframework.ai.mcp.server.common.autoconfigure.annotations.McpServerAnnotationScannerProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected/applied to a currently created BeanPostProcessor [serverAnnotatedMethodBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies/advisors. If this bean does not have to be post-processed, declare it with ROLE_INFRASTRUCTURE.
+2026-02-27T12:15:01.563+05:30  INFO 32124 --- [employee-mcp-server] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-27T12:15:01.657+05:30  INFO 32124 --- [employee-mcp-server] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.33.Final
+2026-02-27T12:15:01.699+05:30  INFO 32124 --- [employee-mcp-server] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-27T12:15:02.140+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-27T12:15:02.197+05:30  INFO 32124 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-27T12:15:02.773+05:30  INFO 32124 --- [employee-mcp-server] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c56644f
+2026-02-27T12:15:02.776+05:30  INFO 32124 --- [employee-mcp-server] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-27T12:15:02.858+05:30  WARN 32124 --- [employee-mcp-server] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-27T12:15:02.884+05:30  INFO 32124 --- [employee-mcp-server] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-27T12:15:04.026+05:30  INFO 32124 --- [employee-mcp-server] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-27T12:15:04.127+05:30  INFO 32124 --- [employee-mcp-server] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:15:05.313+05:30  WARN 32124 --- [employee-mcp-server] [main] o.s.m.provider.tool.SyncMcpToolProvider  : No tool methods found in the provided tool objects: []
+2026-02-27T12:15:05.365+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable tools capabilities, notification: true
+2026-02-27T12:15:05.368+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Registered tools: 7
+2026-02-27T12:15:05.368+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources capabilities, notification: true
+2026-02-27T12:15:05.371+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable resources templates capabilities, notification: true
+2026-02-27T12:15:05.371+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable prompts capabilities, notification: true
+2026-02-27T12:15:05.372+05:30  INFO 32124 --- [employee-mcp-server] [main] o.s.a.m.s.c.a.McpServerAutoConfiguration : Enable completions capabilities
+2026-02-27T12:15:05.759+05:30  INFO 32124 --- [employee-mcp-server] [main] c.mindx360.mcp.SpringAiMcpApplication    : Started SpringAiMcpApplication in 6.771 seconds (process running for 7.563)
+2026-02-27T12:15:23.059+05:30  INFO 32124 --- [employee-mcp-server] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-02-27T12:15:23.060+05:30  INFO 32124 --- [employee-mcp-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-02-27T12:15:23.071+05:30  INFO 32124 --- [employee-mcp-server] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

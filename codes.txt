@@ -1,0 +1,909 @@
+# Project Structure
+
+```
+springAI-mcp-MySQL/
+├── logs
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── mindx360
+│   │   │           └── mcp
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── com
+│               └── mindx360
+│                   └── mcp
+├── target
+├── claude_desktop_config.json
+├── pom.xml
+├── README.md
+├── test-full.ps1
+└── test-handshake.ps1
+```
+
+# Project Structure
+
+```
+mcp/
+├── config
+│   └── McpConfig.java
+├── entity
+│   ├── Client.java
+│   ├── Department.java
+│   ├── Employee.java
+│   ├── Order.java
+│   └── Project.java
+├── repository
+│   ├── ClientRepository.java
+│   ├── DepartmentRepository.java
+│   ├── EmployeeRepository.java
+│   ├── OrderRepository.java
+│   └── ProjectRepository.java
+├── service
+│   ├── ClientService.java
+│   ├── DepartmentService.java
+│   └── EmployeeService.java
+├── tool
+│   ├── ClientTools.java
+│   └── EmployeeTools.java
+└── SpringAiMcpApplication.java
+```
+
+# Project Structure
+
+```
+├── logs
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── mindx360
+│   │   │           └── mcp
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── com
+│               └── mindx360
+│                   └── mcp
+├── target
+├── claude_desktop_config.json
+├── pom.xml
+├── README.md
+├── test-full.ps1
+└── test-handshake.ps1
+```
+
+# File Contents
+
+## src\main\java\com\mindx360\mcp\config\McpConfig.java
+
+```java
+package com.mindx360.mcp.config;
+
+import com.mindx360.mcp.tool.ClientTools;
+import com.mindx360.mcp.tool.EmployeeTools;
+import org.springframework.ai.tool.ToolCallbackProvider;
+import org.springframework.ai.tool.method.MethodToolCallbackProvider;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+/**
+ * Spring AI MCP tool registration configuration.
+ *
+ * <h2>What this class does:</h2>
+ * <p>Wraps the {@link EmployeeTools} bean in a
+ * {@link MethodToolCallbackProvider}, which:
+ * <ol>
+ *   <li>Reflectively scans {@code EmployeeTools} for methods annotated
+ *       with {@code @Tool}.</li>
+ *   <li>Builds a {@code ToolCallback} for each such method, capturing
+ *       the method handle, parameter types, and description text.</li>
+ *   <li>Generates a JSON Schema for each tool's input parameters
+ *       (using method parameter names preserved by the {@code -parameters}
+ *       compiler flag and {@code @ToolParam} descriptions).</li>
+ * </ol>
+ *
+ * <p>The Spring AI MCP Server auto-configuration then discovers every
+ * {@code ToolCallbackProvider} bean and registers all callbacks with the
+ * MCP {@code McpSyncServer} – so Claude Desktop receives the full tool
+ * catalogue automatically on connection.
+ *
+ * <h2>What this class does NOT do:</h2>
+ * <ul>
+ *   <li>No manual JSON-RPC handling.</li>
+ *   <li>No manual STDIO stream readers/writers.</li>
+ *   <li>No manual {@code initialize} / {@code tools/list} response building.</li>
+ * </ul>
+ *
+ * <p>To add more tool classes in future, simply add them as additional
+ * {@code toolObjects()} arguments or create another {@code @Bean} method.
+ */
+@Configuration
+public class McpConfig {
+
+    /**
+     * Registers all {@code @Tool}-annotated methods in {@link EmployeeTools}
+     * with the Spring AI MCP Server as callable tool callbacks.
+     *
+     * @param employeeTools the Spring-managed {@link EmployeeTools} bean
+     * @return a {@link ToolCallbackProvider} consumed by Spring AI MCP auto-config
+     */
+    @Bean
+    ToolCallbackProvider employeeToolCallbacks(EmployeeTools tools) {  // renamed
+        return MethodToolCallbackProvider.builder()
+                .toolObjects(tools)
+                .build();
+    }
+
+    @Bean
+    ToolCallbackProvider clientToolCallbacks(ClientTools tools) {  // renamed
+        return MethodToolCallbackProvider.builder()
+                .toolObjects(tools)
+                .build();
+    }
+}
+
+```
+
+## src\main\java\com\mindx360\mcp\entity\Client.java
+
+```java
+package com.mindx360.mcp.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Table(name = "clients")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Client {
+    
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer clientId;
+
+    @Column(nullable = false, length = 100)
+    private String name;
+
+    private String email;
+    private String phone;
+}
+```
+
+## src\main\java\com\mindx360\mcp\entity\Department.java
+
+```java
+package com.mindx360.mcp.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+
+@Entity
+@Table(name = "departments")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Department {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer departmentId;
+
+    @Column(nullable = false, unique = true,length = 100)
+    private String name;
+}
+
+```
+
+## src\main\java\com\mindx360\mcp\entity\Employee.java
+
+```java
+package com.mindx360.mcp.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "employees")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Employee {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer employeeId;
+
+    @Column(nullable = false)
+    private String firstName;
+    private String lastName;
+
+    @Column(unique = true, nullable = false)
+    private String email;
+
+    private String phone;
+    private String jobTitle;
+    private LocalDate hireDate;
+
+    @Enumerated(EnumType.STRING) // Saves 'Active'/'Inactive' as strings in DB
+    private Status status = Status.Active;
+
+    // The Foreign Key Relationship
+    @ManyToOne 
+    @JoinColumn(name = "department_id") // Links to Department's ID
+    private Department department;
+
+    public enum Status {
+        Active, Inactive
+    }
+}
+```
+
+## src\main\java\com\mindx360\mcp\entity\Order.java
+
+```java
+package com.mindx360.mcp.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.math.BigDecimal;
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "orders")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Order {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer orderId;
+
+    private LocalDate orderDate;
+
+    // Precision 10, Scale 2 matches your DECIMAL(10,2)
+    @Column(precision = 10, scale = 2)
+    private BigDecimal totalAmount;
+
+    // Maps to FOREIGN KEY (client_id)
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
+}
+```
+
+## src\main\java\com\mindx360\mcp\entity\Project.java
+
+```java
+package com.mindx360.mcp.entity;
+
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "projects")
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Project {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer projectId;
+
+    @Column(nullable = false, length = 100)
+    private String name;
+
+    private LocalDate startDate;
+    private LocalDate endDate;
+
+    // Maps to FOREIGN KEY (client_id)
+    @ManyToOne
+    @JoinColumn(name = "client_id")
+    private Client client;
+}
+```
+
+## src\main\java\com\mindx360\mcp\repository\ClientRepository.java
+
+```java
+package com.mindx360.mcp.repository;
+
+import com.mindx360.mcp.entity.Client;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ClientRepository extends JpaRepository<Client, Integer> {}
+```
+
+## src\main\java\com\mindx360\mcp\repository\DepartmentRepository.java
+
+```java
+package com.mindx360.mcp.repository;
+
+import com.mindx360.mcp.entity.Department;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DepartmentRepository extends JpaRepository<Department, Integer> {
+}
+```
+
+## src\main\java\com\mindx360\mcp\repository\EmployeeRepository.java
+
+```java
+package com.mindx360.mcp.repository;
+
+import com.mindx360.mcp.entity.Employee;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Repository
+public interface EmployeeRepository extends JpaRepository<Employee, Integer> {
+    // That's it! You now have save(), findById(), findAll(), deleteById()
+
+    List<Employee> findByStatus(Employee.Status status);
+
+    List<Employee> findByDepartment_Name(String name);
+
+    List<Employee> findByFirstNameContainingIgnoreCase(String keyword);
+
+    List<Employee> findByHireDateAfter(LocalDate date);
+}
+```
+
+## src\main\java\com\mindx360\mcp\repository\OrderRepository.java
+
+```java
+package com.mindx360.mcp.repository;
+
+import com.mindx360.mcp.entity.Order;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface OrderRepository extends JpaRepository<Order, Integer> {}
+```
+
+## src\main\java\com\mindx360\mcp\repository\ProjectRepository.java
+
+```java
+package com.mindx360.mcp.repository;
+
+import com.mindx360.mcp.entity.Project;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface ProjectRepository extends JpaRepository<Project, Integer> {}
+```
+
+## src\main\java\com\mindx360\mcp\service\ClientService.java
+
+```java
+package com.mindx360.mcp.service;
+
+import com.mindx360.mcp.entity.Client;
+import com.mindx360.mcp.repository.ClientRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class ClientService {
+    private final ClientRepository repo;
+
+    public List<Client> getAllClients() {
+        return repo.findAll();
+    }
+}
+```
+
+## src\main\java\com\mindx360\mcp\service\DepartmentService.java
+
+```java
+package com.mindx360.mcp.service;
+
+import com.mindx360.mcp.entity.Department;
+import com.mindx360.mcp.repository.DepartmentRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class DepartmentService {
+    private final DepartmentRepository repo;
+
+    public List<Department> getAllDepartments() {
+        return repo.findAll();
+    }
+}
+```
+
+## src\main\java\com\mindx360\mcp\service\EmployeeService.java
+
+```java
+package com.mindx360.mcp.service;
+
+import com.mindx360.mcp.entity.Employee;
+import com.mindx360.mcp.repository.EmployeeRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Optional;
+
+/**
+ * Business-logic layer for Employee operations.
+ *
+ * <p>All repository access is funnelled through this service so that:
+ * <ul>
+ *   <li>Transaction boundaries are clearly defined.</li>
+ *   <li>The {@code EmployeeTools} class stays free of persistence concerns.</li>
+ *   <li>Migrating to MySQL requires zero changes here (only properties).</li>
+ * </ul>
+ *
+ * <p>Constructor injection is used exclusively (SOLID, no field injection).
+ */
+@Service
+@RequiredArgsConstructor
+@Transactional(readOnly = true)
+
+public class EmployeeService {
+
+    private final EmployeeRepository repo;
+
+    public List<Employee> getAllEmployees() {
+        return repo.findAll();
+    }
+
+    public Employee getEmployeeById(Integer id) {
+        return repo.findById(id).orElseThrow();
+    }
+
+    public List<Employee> getEmployeesByDepartment(String dept) {
+        return repo.findByDepartment_Name(dept);
+    }
+
+    public List<Employee> getEmployeesByStatus(String status) {
+        return repo.findByStatus(Employee.Status.valueOf(status));
+    }
+
+    public List<Employee> searchEmployees(String keyword) {
+        return repo.findByFirstNameContainingIgnoreCase(keyword);
+    }
+
+    public List<Employee> hiredAfter(String date) {
+        return repo.findByHireDateAfter(LocalDate.parse(date));
+    }
+
+    public long getEmployeeCount() {
+        return repo.count();
+    }
+
+}
+
+```
+
+## src\main\java\com\mindx360\mcp\SpringAiMcpApplication.java
+
+```java
+package com.mindx360.mcp;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
+ * Entry point for the Spring AI MCP Employee Server.
+ *
+ * <p>Spring AI MCP Server Starter auto-configures:
+ * <ul>
+ *   <li>STDIO transport handler (reads from stdin, writes to stdout)</li>
+ *   <li>JSON-RPC message dispatcher</li>
+ *   <li>MCP tool registry – discovers all ToolCallbackProvider beans</li>
+ *   <li>JSON Schema generation for each @Tool-annotated method</li>
+ * </ul>
+ *
+ * <p>No manual McpRunner, JSON parsing, or tool registration is needed.
+ */
+@SpringBootApplication
+public class SpringAiMcpApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringAiMcpApplication.class, args);
+    }
+}
+
+```
+
+## src\main\java\com\mindx360\mcp\tool\ClientTools.java
+
+```java
+package com.mindx360.mcp.tool;
+
+import com.mindx360.mcp.entity.Client;
+import com.mindx360.mcp.service.ClientService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Component
+@RequiredArgsConstructor
+public class ClientTools {
+
+    private final ClientService service;
+
+    @Tool(description="Get all clients")
+    public List<Client> getAllClients(){
+        return service.getAllClients();
+    }
+}
+```
+
+## src\main\java\com\mindx360\mcp\tool\EmployeeTools.java
+
+```java
+package com.mindx360.mcp.tool;
+
+import com.mindx360.mcp.entity.Employee;
+import com.mindx360.mcp.service.EmployeeService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.ai.tool.annotation.Tool;
+import org.springframework.ai.tool.annotation.ToolParam;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
+
+
+import java.time.LocalDate;
+import java.util.List;
+import java.util.Map;
+import java.util.Optional;
+
+
+/**
+ * Spring AI MCP Tool class – exposes HR business operations to Claude Desktop.
+ *
+ * <h2>How Spring AI handles this class:</h2>
+ * <ol>
+ *   <li>The {@link org.springframework.ai.tool.MethodToolCallbackProvider} bean
+ *       (declared in {@code McpConfig}) wraps every {@code @Tool}-annotated
+ *       method in a {@code ToolCallback}.</li>
+ *   <li>Spring AI MCP Server auto-configures a {@code McpSyncServer} and
+ *       registers all {@code ToolCallback} instances from every
+ *       {@code ToolCallbackProvider} bean found in the context.</li>
+ *   <li>On startup the server sends a {@code tools/list} response to Claude
+ *       containing the method names, descriptions, and auto-generated
+ *       JSON Schemas derived from the method signatures.</li>
+ *   <li>When Claude decides to invoke a tool it sends a {@code tools/call}
+ *       message; Spring AI deserialises the arguments and delegates to
+ *       the matching method – all transparently.</li>
+ * </ol>
+ *
+ * <p><strong>No manual JSON-RPC, STDIO, or schema code is written here.</strong>
+ */
+@Component
+@RequiredArgsConstructor
+public class EmployeeTools {
+
+    private final EmployeeService service;
+
+    @Tool(description="Get all employees")
+    public List<Employee> getAllEmployees(){
+        return service.getAllEmployees();
+    }
+
+    @Tool(description="Get employee by ID")
+    public Employee getEmployeeById(
+            @ToolParam(description="Employee ID") Integer id){
+        return service.getEmployeeById(id);
+    }
+
+    @Tool(description="Get employees by department")
+    public List<Employee> getEmployeesByDepartment(
+            @ToolParam(description="Department name") String dept){
+        return service.getEmployeesByDepartment(dept);
+    }
+
+    @Tool(description="Search employees by name")
+    public List<Employee> searchEmployees(
+            @ToolParam(description="Partial name") String keyword){
+        return service.searchEmployees(keyword);
+    }
+
+    @Tool(description="Get employees by status Active/Inactive")
+    public List<Employee> getEmployeesByStatus(
+            @ToolParam(description="Status") String status){
+        return service.getEmployeesByStatus(status);
+    }
+
+    @Tool(description="Get total employee count")
+    public long getTotalEmployeeCount(){
+        return service.getEmployeeCount();
+    }
+}
+
+```
+
+# Project Structure
+
+```
+├── logs
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── mindx360
+│   │   │           └── mcp
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── com
+│               └── mindx360
+│                   └── mcp
+├── target
+├── claude_desktop_config.json
+├── pom.xml
+├── README.md
+├── test-full.ps1
+└── test-handshake.ps1
+```
+
+# File Contents
+
+## src\main\resources\application.properties
+
+```properties
+# =========================================================
+# Spring AI MCP Employee Server - MySQL (STDIO SAFE)
+# =========================================================
+
+spring.application.name=employee-mcp-server
+
+# Disable web server + banner
+spring.main.web-application-type=none
+spring.main.banner-mode=off
+
+
+# ---------------- MCP ----------------
+spring.ai.mcp.server.name=employee-mcp-server-mysql
+spring.ai.mcp.server.version=1.0.0
+spring.ai.mcp.server.stdio=true
+
+spring.ai.mcp.server.instructions=\
+  This server exposes HR Employee data tools backed by a MySQL database.
+
+
+# ---------------- MySQL ----------------
+spring.datasource.url=jdbc:mysql://localhost:3306/company_db?createDatabaseIfNotExist=true
+spring.datasource.username=root
+spring.datasource.password=root
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# VERY IMPORTANT
+spring.jpa.show-sql=false
+
+
+# ---------------- Logging ----------------
+
+# Log to file only
+logging.file.name=./logs/mcp-server-mysql.log
+
+# Disable console completely
+logging.level.root=OFF
+logging.level.org.springframework=OFF
+logging.level.org.hibernate=OFF
+logging.level.org.springframework.ai.mcp=OFF
+
+## TEMPORARY - change back after fixing
+#logging.level.root=INFO
+#logging.level.org.springframework=INFO
+#logging.level.com.mindx360=DEBUG
+#
+## Keep logging to FILE so it doesn't corrupt STDIO
+#logging.file.name=./logs/mcp-server-mysql.log
+
+
+```
+
+# Project Structure
+
+```
+├── logs
+├── src
+│   ├── main
+│   │   ├── java
+│   │   │   └── com
+│   │   │       └── mindx360
+│   │   │           └── mcp
+│   │   └── resources
+│   │       └── application.properties
+│   └── test
+│       └── java
+│           └── com
+│               └── mindx360
+│                   └── mcp
+├── target
+├── claude_desktop_config.json
+├── pom.xml
+├── README.md
+├── test-full.ps1
+└── test-handshake.ps1
+```
+
+# File Contents
+
+## pom.xml
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0
+    </modelVersion> <!-- ───────────────────────────────────────────────────────── Spring Boot Parent – manages core dependency versions ───────────────────────────────────────────────────────── -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.7</version>
+        <relativePath/>
+    </parent> <!-- ─── Project coordinates ─────────────────────────────────── -->
+    <groupId>com.mindx360</groupId>
+    <artifactId>springAI-mcp</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+    <name>Spring AI MCP Employee Server</name>
+    <description>Local MCP server built with Spring AI MCP Server Starter. Exposes @Tool-annotated business operations
+        to Claude Desktop.
+    </description> <!-- ─── Global properties ────────────────────────────────────── -->
+    <properties>
+        <java.version>21</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-ai.version>1.1.2</spring-ai.version> <!-- First Lombok release fully compatible with JDK 21-24 -->
+        <lombok.version>1.18.36</lombok.version>
+    </properties> <!-- ─── Spring AI BOM – aligns all spring-ai artifact versions ── -->
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.ai</groupId>
+                <artifactId>spring-ai-bom</artifactId>
+                <version>${spring-ai.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+    <dependencies> <!-- ╔══════════════════════════════════════════════════════╗ ║ Spring AI MCP Server (handles all MCP protocol, ║ ║ tool discovery, JSON-RPC, STDIO transport – zero ║ ║ manual implementation required) ║ ╚══════════════════════════════════════════════════════╝ -->
+        <dependency>
+            <groupId>org.springframework.ai</groupId>
+            <artifactId>spring-ai-starter-mcp-server</artifactId>
+        </dependency>
+
+        <!-- Spring Boot Web – needed for H2 console in dev --> <!-- Can be removed for pure STDIO production deployments -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency><!-- Spring Data JPA ──────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency> <!-- MySQL database ───────────────────────────────── -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency> <!-- Jackson – declared explicitly for clarity -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+        </dependency> <!-- Jackson Java 8 time module – serialises LocalDate in tool responses -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.datatype</groupId>
+            <artifactId>jackson-datatype-jsr310</artifactId>
+        </dependency> <!-- Lombok – reduces boilerplate (optional but clean) ────── -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <optional>true</optional>
+        </dependency> <!-- Test ────────────────────────────────────────────────── -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies> <!-- ─── Milestone repository for Spring AI releases ─────────── -->
+    <repositories>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    <build>
+        <plugins> <!-- Compiler plugin CRITICAL: -parameters preserves method parameter names at runtime so Spring AI can introspect @Tool signatures and auto-generate correct JSON Schemas for Claude Desktop. -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <parameters>true</parameters>
+                    <annotationProcessorPaths>
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>${lombok.version}</version>
+                        </path>
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin> <!-- Spring Boot fat-JAR plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <excludes>
+                        <exclude>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                        </exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+```
+

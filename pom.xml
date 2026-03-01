@@ -13,14 +13,14 @@
     <artifactId>springAI-mcp</artifactId>
     <version>1.0.0</version>
     <packaging>jar</packaging>
-    <name>Spring AI MCP Employee Server</name>
-    <description>Local MCP server built with Spring AI MCP Server Starter. Exposes @Tool-annotated business operations
-        to Claude Desktop.
+    <name>Spring AI Ollama REST Backend</name>
+    <description>Spring Boot REST backend using Spring AI + Ollama (llama3.1) for AI-driven tool calling.
+        Exposes @Tool-annotated business operations via a /ai/query REST endpoint.
     </description> <!-- ─── Global properties ────────────────────────────────────── -->
     <properties>
         <java.version>21</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-ai.version>1.1.2</spring-ai.version> <!-- First Lombok release fully compatible with JDK 21-24 -->
+        <spring-ai.version>1.0.0</spring-ai.version> <!-- First GA release of Spring AI -->
         <lombok.version>1.18.36</lombok.version>
     </properties> <!-- ─── Spring AI BOM – aligns all spring-ai artifact versions ── -->
     <dependencyManagement>
@@ -34,10 +34,10 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-    <dependencies> <!-- Adding Ollama Spring AI Starter -->
+    <dependencies> <!-- Spring AI Ollama Starter – drives ChatClient + Ollama tool-calling -->
         <dependency>
             <groupId>org.springframework.ai</groupId>
-            <artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
+            <artifactId>spring-ai-starter-model-ollama</artifactId>
         </dependency>
 
         <!-- Spring Boot Web – needed for H2 console in dev --> <!-- Can be removed for pure STDIO production deployments -->
